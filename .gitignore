@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Generated output
+outputs/
+
+# IDE
+.idea/
+
+# macOS
+.DS_Store
