@@ -1,0 +1,9 @@
+Agent (00:00): Thanks for calling Summit Home Warranty, this is Riley, how can I help you today?
+User (00:04): Hi, my dishwasher stopped draining and I filed a claim two days ago, I haven't heard anything.
+Agent (00:10): I'm sorry about that, let me pull up your claim. Can I get your claim number or the phone number on the account?
+User (00:15): It's 617-555-0142.
+Agent (00:20): Found it, claim number 88213. Looks like a technician is scheduled for tomorrow between 8am and noon. You should have gotten a text confirmation.
+User (00:29): I never got a text.
+Agent (00:31): I apologize for that, I'll resend the confirmation now and also note your account to double check your contact preferences. Is there anything else I can help with?
+User (00:40): No that's it, thanks.
+Agent (00:42): You're welcome, have a great day.

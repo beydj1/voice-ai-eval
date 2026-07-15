@@ -1,0 +1,10 @@
+timestamp,speaker,text
+0:00,bot,Thanks for calling FastTrack Roadside Assistance. What's going on?
+0:03,caller,My car won't start and I'm in a parking garage on level 3.
+0:08,bot,Got it. Can you confirm the make model and your location address or nearest cross street?
+0:15,caller,It's a 2019 Honda Civic silver at 400 Boylston Street garage.
+0:22,bot,Thanks. I'm sending a tow truck now, ETA is about 20 to 30 minutes.
+0:27,caller,Will there be a charge? I think I have roadside coverage.
+0:31,bot,I see roadside assistance on your plan so this should be fully covered.
+0:36,caller,Great thank you.
+0:38,bot,You're welcome, help is on the way.

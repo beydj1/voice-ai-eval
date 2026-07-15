@@ -1,0 +1,16 @@
+{
+  "call_id": "CALL-9931",
+  "agent_version": "voicebot-v3.2.1",
+  "duration_seconds": 187,
+  "turns": [
+    {"role": "agent", "text": "Hi, this is the Northgate Dental scheduling line, how can I help?", "timestamp": "0:00"},
+    {"role": "user", "text": "I need to reschedule my cleaning from Thursday to next week sometime.", "timestamp": "0:05"},
+    {"role": "agent", "text": "Sure! I have openings next Tuesday at 9am, Wednesday at 2pm, or Friday at 11am. Which works?", "timestamp": "0:11"},
+    {"role": "user", "text": "Wednesday at 2 is good.", "timestamp": "0:17"},
+    {"role": "agent", "text": "Great, you're rebooked for Wednesday at 2pm with Dr. Alvarez. You'll get a confirmation text shortly. Anything else?", "timestamp": "0:21"},
+    {"role": "user", "text": "Actually, is that covered fully by Delta Dental or will I owe a copay?", "timestamp": "0:28"},
+    {"role": "agent", "text": "Delta Dental always covers cleanings 100% with no copay for every plan, so you're all set.", "timestamp": "0:34"},
+    {"role": "user", "text": "Okay perfect, thank you!", "timestamp": "0:40"},
+    {"role": "agent", "text": "You're welcome, see you Wednesday!", "timestamp": "0:42"}
+  ]
+}
