@@ -1,0 +1,5 @@
+# Core pipeline has no hard dependencies (stdlib only).
+# Install only the SDK(s) for the judge provider(s) you actually use:
+
+anthropic>=0.40.0   # for --provider anthropic
+openai>=1.50.0      # for --provider openai

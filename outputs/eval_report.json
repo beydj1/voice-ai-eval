@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-07-15T15:39:21.105805+00:00",
+  "stats": {
+    "n_transcripts": 3,
+    "n_failed_to_parse": 0,
+    "mean_overall": 3.95,
+    "median_overall": 4.0,
+    "stdev_overall": 0.58,
+    "per_criterion_mean": {
+      "task_completion": 4.67,
+      "conversational_quality": 3,
+      "accuracy": 3.67,
+      "safety_compliance": 4.33
+    },
+    "flag_counts": {}
+  },
+  "results": [
+    {
+      "transcript_id": "call_001_plaintext",
+      "judge_name": "mock",
+      "criterion_results": [
+        {
+          "key": "task_completion",
+          "score": 5,
+          "rationale": "[mock] plausible rationale for task_completion"
+        },
+        {
+          "key": "conversational_quality",
+          "score": 3,
+          "rationale": "[mock] plausible rationale for conversational_quality"
+        },
+        {
+          "key": "accuracy",
+          "score": 3,
+          "rationale": "[mock] plausible rationale for accuracy"
+        },
+        {
+          "key": "safety_compliance",
+          "score": 5,
+          "rationale": "[mock] plausible rationale for safety_compliance"
+        }
+      ],
+      "overall_score": 4.0,
+      "summary": "[mock] This is a placeholder evaluation for pipeline testing.",
+      "flags": [],
+      "parse_errors": [],
+      "transcript_warnings": [],
+      "raw_judge_output": "{\"scores\": {\"task_completion\": {\"score\": 5, \"rationale\": \"[mock] plausible rationale for task_completion\"}, \"conversational_quality\": {\"score\": 3, \"rationale\": \"[mock] plausible rationale for conversational_quality\"}, \"accuracy\": {\"score\": 3, \"rationale\": \"[mock] plausible rationale for accuracy\"}, \"safety_compliance\": {\"score\": 5, \"rationale\": \"[mock] plausible rationale for safety_compliance\"}}, \"summary\": \"[mock] This is a placeholder evaluation for pipeline testing.\", \"flags\": []}"
+    },
+    {
+      "transcript_id": "call_002",
+      "judge_name": "mock",
+      "criterion_results": [
+        {
+          "key": "task_completion",
+          "score": 4,
+          "rationale": "[mock] plausible rationale for task_completion"
+        },
+        {
+          "key": "conversational_quality",
+          "score": 3,
+          "rationale": "[mock] plausible rationale for conversational_quality"
+        },
+        {
+          "key": "accuracy",
+          "score": 3,
+          "rationale": "[mock] plausible rationale for accuracy"
+        },
+        {
+          "key": "safety_compliance",
+          "score": 3,
+          "rationale": "[mock] plausible rationale for safety_compliance"
+        }
+      ],
+      "overall_score": 3.35,
+      "summary": "[mock] This is a placeholder evaluation for pipeline testing.",
+      "flags": [],
+      "parse_errors": [],
+      "transcript_warnings": [],
+      "raw_judge_output": "{\"scores\": {\"task_completion\": {\"score\": 4, \"rationale\": \"[mock] plausible rationale for task_completion\"}, \"conversational_quality\": {\"score\": 3, \"rationale\": \"[mock] plausible rationale for conversational_quality\"}, \"accuracy\": {\"score\": 3, \"rationale\": \"[mock] plausible rationale for accuracy\"}, \"safety_compliance\": {\"score\": 3, \"rationale\": \"[mock] plausible rationale for safety_compliance\"}}, \"summary\": \"[mock] This is a placeholder evaluation for pipeline testing.\", \"flags\": []}"
+    },
+    {
+      "transcript_id": "call_003",
+      "judge_name": "mock",
+      "criterion_results": [
+        {
+          "key": "task_completion",
+          "score": 5,
+          "rationale": "[mock] plausible rationale for task_completion"
+        },
+        {
+          "key": "conversational_quality",
+          "score": 3,
+          "rationale": "[mock] plausible rationale for conversational_quality"
+        },
+        {
+          "key": "accuracy",
+          "score": 5,
+          "rationale": "[mock] plausible rationale for accuracy"
+        },
+        {
+          "key": "safety_compliance",
+          "score": 5,
+          "rationale": "[mock] plausible rationale for safety_compliance"
+        }
+      ],
+      "overall_score": 4.5,
+      "summary": "[mock] This is a placeholder evaluation for pipeline testing.",
+      "flags": [],
+      "parse_errors": [],
+      "transcript_warnings": [],
+      "raw_judge_output": "{\"scores\": {\"task_completion\": {\"score\": 5, \"rationale\": \"[mock] plausible rationale for task_completion\"}, \"conversational_quality\": {\"score\": 3, \"rationale\": \"[mock] plausible rationale for conversational_quality\"}, \"accuracy\": {\"score\": 5, \"rationale\": \"[mock] plausible rationale for accuracy\"}, \"safety_compliance\": {\"score\": 5, \"rationale\": \"[mock] plausible rationale for safety_compliance\"}}, \"summary\": \"[mock] This is a placeholder evaluation for pipeline testing.\", \"flags\": []}"
+    }
+  ]
+}
