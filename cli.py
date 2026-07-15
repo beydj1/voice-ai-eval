@@ -35,6 +35,9 @@ def main():
     parser.add_argument("--provider", default="mock", choices=["anthropic", "openai", "mock"], help="Judge backend (default: mock, no API calls).")
     parser.add_argument("--model", default=None, help="Model name override, e.g. claude-sonnet-4-6 or gpt-4o.")
     parser.add_argument("--out", default="outputs", help="Directory to write eval_report.md / eval_report.json into.")
+    parser.add_argument("--fail-below", type=float, default=None, metavar="SCORE",
+                         help="CI gate: exit 1 if the mean overall score drops below this (1-5 scale), "
+                              "e.g. --fail-below 3.5. Also exits 1 if any transcript's judge output was unparseable.")
     args = parser.parse_args()
 
     input_path = Path(args.input)
@@ -70,6 +73,24 @@ def main():
     failed = sum(1 for r in results if "judge_output_unparseable" in r.flags)
     if failed:
         print(f"\nWARNING: {failed}/{len(results)} transcript(s) failed to produce parseable judge output.", file=sys.stderr)
+
+    # --- CI gate ---
+    if args.fail_below is not None:
+        scored = [r.overall_score for r in results if r.overall_score > 0]
+        mean_score = sum(scored) / len(scored) if scored else 0.0
+
+        gate_failed = False
+        if failed:
+            print(f"\nCI GATE FAILED: {failed} transcript(s) produced unparseable judge output.", file=sys.stderr)
+            gate_failed = True
+        if mean_score < args.fail_below:
+            print(f"CI GATE FAILED: mean overall score {mean_score:.2f} is below threshold {args.fail_below}.", file=sys.stderr)
+            gate_failed = True
+
+        if gate_failed:
+            sys.exit(1)
+        else:
+            print(f"\nCI gate passed: mean overall score {mean_score:.2f} >= {args.fail_below}.")
 
 
 if __name__ == "__main__":
