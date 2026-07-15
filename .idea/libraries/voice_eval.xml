@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="voice_eval">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/voice_eval.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
